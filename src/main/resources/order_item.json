@@ -1,0 +1,12 @@
+{"item_id":1, "order_id":1, "product_id":"Adidas", "qty":12, "promotion_id":1, "cost":1200}
+{"item_id":2, "order_id":2, "product_id":"Nike", "qty":3, "promotion_id":1, "cost":1900}
+{"item_id":3, "order_id":3, "product_id":"Reebok", "qty":8, "promotion_id":1, "cost":1300}
+{"item_id":4, "order_id":4, "product_id":"Puma", "qty":21, "promotion_id":1, "cost":200}
+{"item_id":4, "order_id":4, "product_id":"Harry Potter", "qty":61, "promotion_id":1, "cost":2200}
+{"item_id":4, "order_id":4, "product_id":"TED talks", "qty":14, "promotion_id":1, "cost":9200}
+{"item_id":4, "order_id":4, "product_id":"Forest Gamp", "qty":8, "promotion_id":1, "cost":1550}
+{"item_id":4, "order_id":4, "product_id":"Effective Java", "qty":77, "promotion_id":1, "cost":3200}
+{"item_id":4, "order_id":4, "product_id":"Channel", "qty":51, "promotion_id":1, "cost":5100}
+{"item_id":4, "order_id":4, "product_id":"Kenzo", "qty":14, "promotion_id":1, "cost":3200}
+{"item_id":4, "order_id":4, "product_id":"Dior", "qty":8, "promotion_id":1, "cost":9200}
+{"item_id":4, "order_id":4, "product_id":"Versace", "qty":13, "promotion_id":1, "cost":4400}
