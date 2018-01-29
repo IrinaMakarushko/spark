@@ -45,7 +45,7 @@ public class CallLogsHandler {
 
     private static void calculateTopByDuration(Dataset<Row> callLogs, SparkSession sparkSession) {
         callLogs.createOrReplaceTempView("callLogs");
-        Dataset<Row> sumDurationsByFrom = sparkSession.sql("SELECT from, sum(duration) as sumDuration FROM callLogs GROUP BY from ORDER BY sumDuration");
+        Dataset<Row> sumDurationsByFrom = sparkSession.sql("SELECT from, sum(duration) as sumDuration FROM callLogs GROUP BY from ORDER BY sumDuration desc");
         Dataset<Row> topOutgoingCalls = sumDurationsByFrom.limit(TOP_N);
         topOutgoingCalls.show();
     }

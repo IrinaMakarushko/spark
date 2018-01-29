@@ -10,14 +10,14 @@ public class TopRevenueFinder {
 
     public static final int TOP_N = 3;
     public static final String ORDER_ITEM_FILENAME = "src\\main\\resources\\order_item.json";
-    public static final String PRODUCTS_FILENAME = "src\\main\\resources\\product.json";
+    public static final String PRODUCT_FILENAME = "src\\main\\resources\\product.json";
 
     public static void main(String[] args) {
         SparkSession sparkSession = getSparkSession();
         Dataset<Row> orderItems = sparkSession.read().json(ORDER_ITEM_FILENAME);
         Dataset<Row> product = sparkSession.read().json(PRODUCTS_FILENAME);
 
-        //TopRevenueFinder is cost * qty
+        //Revenue is cost * qty
         Column cost = new Column("cost");
         Column qty = new Column("qty");
         Column revenue = cost.multiply(qty);
