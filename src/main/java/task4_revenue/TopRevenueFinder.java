@@ -15,7 +15,7 @@ public class TopRevenueFinder {
     public static void main(String[] args) {
         SparkSession sparkSession = getSparkSession();
         Dataset<Row> orderItems = sparkSession.read().json(ORDER_ITEM_FILENAME);
-        Dataset<Row> product = sparkSession.read().json(PRODUCTS_FILENAME);
+        Dataset<Row> product = sparkSession.read().json(PRODUCT_FILENAME);
 
         //Revenue is cost * qty
         Column cost = new Column("cost");
