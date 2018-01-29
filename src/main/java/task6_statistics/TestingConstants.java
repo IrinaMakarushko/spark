@@ -8,4 +8,5 @@ public class TestingConstants {
     public static final double MAX_SCORE = 10.0;
     public static final double SCORE_INTERVAL = 0.1;
     public static final int COUNT_STUDENT = 1000;
+    public static final String STUDENT_PARQUET_FILENAME = "students.parquet";
 }
